@@ -1,0 +1,135 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Titillium Web';
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #007bff;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    background-color: #007bff;
+    flex: 100%;
+    color: #ffffff;
+    height: 80px;
+    vertical-align: middle;
+
+}
+
+#title {
+    line-height: 80px;
+    margin: auto;
+    display: inline-block;
+    font-size: 1.9rem;
+}
+
+#hamburger-menu {
+    display: inline-block;
+    margin: 0 20px;
+    background: transparent;
+    color: white;
+    border: none;
+}
+
+#map {
+    position: absolute;
+    height: calc(100vh - 90px);
+    width: 100%;
+    color: #007bff;
+    overflow: hidden;
+}
+
+#sideDrawer {
+    position: absolute;
+    z-index: 5;
+    max-width: 100%;
+    width: 320px;
+    height: calc(100vh - 90px);
+    background-color: #ffffff;
+    overflow: auto;
+}
+
+.hide {
+    display: none;
+}
+
+.filter {
+    width: 87%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.2rem;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    font-size: 1rem;
+    margin: 0.5rem;
+    padding: 5px;
+    background-color: #007bff;
+    border-radius: 2px;
+    color: #ffffff;
+}
+
+#sideDrawer li {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.venue-name {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.address {
+    font-size: 1rem;
+}
+
+@media (max-width: 395px) {
+    #title {
+        font-size: 1.8rem;
+    }
+
+    #hamburger-menu {
+        padding: 12px;
+        margin: 0;
+    }
+}
+
+@media (min-width: 396px) and (max-width: 610px) {
+    #title {
+        font-size: 1.8rem;
+    }
+
+    #hamburger-menu {
+        margin: 0;
+        padding: 20px;
+    }
+}
